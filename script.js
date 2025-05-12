@@ -59,7 +59,9 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const parms = {
         name: name,
         email: email,
-        message: message
+        message: message,
+        To : "rgeni2020@gmail.com",
+        From : email
     };
 
     emailjs.send("service_9kg8tjb", "template_89slgas", parms).then(function () {
@@ -70,3 +72,4 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         console.error("EmailJS Error:", error);
     });
 });
+
